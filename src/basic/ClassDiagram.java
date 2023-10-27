@@ -1,7 +1,7 @@
 package basic;
 
 interface B {
-    final static String CITY = "Bangalore";
+    String CITY = "Bangalore";
 
     void m1();
 

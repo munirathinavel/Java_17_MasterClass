@@ -26,7 +26,7 @@ public class Base64Encoding {
 
 //         MIME Encoding / Decoding
         StringBuilder buffer = getMimeBuffer();
-        System.out.println("\nOriginal UUID MIME:" + buffer.toString());
+        System.out.println("\nOriginal UUID MIME:" + buffer);
         String mimeEncoded = Base64.getMimeEncoder().encodeToString(buffer.toString().getBytes());
         System.out.println("\nMIME encoded String:\n\r" + mimeEncoded);
 

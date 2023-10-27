@@ -43,8 +43,7 @@ public class PrimitiveTypes {
 
     private static Result getResult(double pounds) {
         double kilograms = pounds * 0.45359237;
-        Result result = new Result(pounds, kilograms);
-        return result;
+        return new Result(pounds, kilograms);
     }
 
     private record Result(double pounds, double kilograms) {

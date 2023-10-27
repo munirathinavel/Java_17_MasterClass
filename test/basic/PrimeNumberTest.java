@@ -2,8 +2,6 @@ package basic;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class PrimeNumberTest {
 
     @Test
@@ -15,9 +13,9 @@ class PrimeNumberTest {
 //            System.out.println("Prime Numbers:");
             for (int i = 0; i < 100000; i++) {
                 boolean result = primeNumber.isPrime(i);
-//                if (result) {
-//                    System.out.print(i + " ");
-//                }
+                if (result) {
+                    System.out.print(i + " ");
+                }
             }
             totalTime += (System.currentTimeMillis() - startTime);
         }

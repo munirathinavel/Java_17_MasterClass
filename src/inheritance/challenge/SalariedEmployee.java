@@ -1,9 +1,7 @@
 package inheritance.challenge;
 
-import java.text.SimpleDateFormat;
-
 public class SalariedEmployee extends Employee {
-    private double annualPay;
+    final private double annualPay;
     private boolean isRetired;
 
     public SalariedEmployee(String name, String birthDate, String hireDate, double annualPay, boolean isRetired) {
@@ -14,7 +12,7 @@ public class SalariedEmployee extends Employee {
 
     public String retire() {
         isRetired = true;
-       return endDate = "10-26-2029";
+        return endDate = "10-26-2029";
     }
 
     @Override
