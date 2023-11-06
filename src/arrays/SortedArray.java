@@ -43,7 +43,14 @@ public class SortedArray {
         int[] result = sortIntegers(array);
         System.out.println("Sorted Array:");
         printArray(result);
-    }
+
+        int[] a1 = new int[5];
+        int[] a2 = a1;
+        a2[1] = 123;
+        System.out.println(Arrays.toString(a1));
+        System.out.println(Arrays.toString(a2));
+
+     }
 }
     
  
